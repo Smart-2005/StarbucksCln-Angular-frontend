@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main-page">
+
+        <div class="add-products-container"  >
+
+            <div class="products-img"  >
+                <div class="container" >
+                   
+                </div>
+                <div class="container2" style="position: absolute;">
+                    <img style="filter: drop-shadow(5px 5px 10px #ffffff);position: absolute; top: -400px;left: 50px; z-index: 2; width: 100% ;height:100%;" [src]=" 'assets/starbuck.png' " alt="">
+                </div>
+                
+            </div>
+
+            <form class="products-details"  [formGroup]="addProductForm" (ngSubmit)="addProduct()">
+
+
+                <div class="products-header">
+                    <h1>Add Product</h1>
+                </div>
+
+                <div  class="products-inputs">
+                    
+                    <div class="input name">
+                        <input formControlName="productImage" (change)="selectFile($event)" type="file">
+                    </div>
+                    <div class="input name">
+                        <label for="productName">Product Name</label>
+                        <input  placeholder="Ex: Dark Latte" formControlName="productName" style="width: 90%;height: 35px;" type="text" id="productName">
+                    </div>
+                    <div  class="input description">
+                        <label for="productDescription">Product Description</label>
+                        <input placeholder="Use max 65 characters" formControlName="productDescription" style="width: 90%; height: 35px;" type="text" id="productDescription">
+                    </div>
+                    <div class="input price">
+                        <label for="productPrice">Product Price</label>
+                        <input  placeholder="Ex: 3000"  formControlName="productPrice" style="width: 90%; height: 35px;" type="text" id="productPrice">
+                    </div>
+                    <div   class="input quantity">
+                        <label for="productQuantity">Product Quantity</label>
+                        <input  placeholder="Ex: 3" formControlName="productQuantity" style="width: 90%; height: 35px;" type="text" id="productQuantity">
+                    </div>
+
+                </div>
+
+                <div class="products-btn">
+                    <button type="submit" class="add-product-btn" >Add Product</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    <app-footer></app-footer>
+
+
+</body>
+</html>

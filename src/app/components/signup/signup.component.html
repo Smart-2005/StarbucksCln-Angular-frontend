@@ -1,0 +1,60 @@
+<nav class="navbar navbar-light" style="background-color: #007042;">
+  <a style="text-align: center;position: relative; left: 40px; " class="navbar-brand" href="#">
+    <img  [src]=" 'assets/uutww8mg.png' " width="60" height="60" class="d-inline-block align-top" alt="">
+  </a>
+</nav>
+
+<br>
+<div class="signup-page">
+
+  <div class="logo">
+    <img style="width: 250px; height: 250px; position: relative;top: 70px; "  [src]=" 'assets/uutww8mg.png' " alt="">
+  </div>
+  <div class="signup-card">
+
+    <div class="signup-card-img">
+      <img style="width: 380px; height: 420px;position: relative;top: 30px;  filter: drop-shadow(0 0 1rem rgb(136, 74, 33));"  [src]=" 'assets/Frappuccino.png' " alt="">
+    </div>
+
+    <div class="signup-card-details">
+
+      <div class="signup-card-header">
+        <h1>Signup <span style="color: #007042;"> Form</span> </h1>
+      </div>
+      <div style="width: 100%; height: 100%; display: flex; align-items: center;justify-content: center;" >
+        <form class="signup-form" [formGroup]="signupForm" (ngSubmit)="createUser()">
+
+          <div class="form-group">
+              <label style="font-size: large; font-weight: 500;" for="name">Name</label>
+              <input  formControlName="name"  type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ex: Carle Johnson">
+          </div>
+
+          <div class="form-group">
+            <label  style="font-size: large; font-weight: 500;" for="username">Email address</label>
+            <input   formControlName="username" type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Ex: carlejohnson@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label  style="font-size: large; font-weight: 500;" for="password">Password</label>
+            <input   formControlName="password" type="password" class="form-control" id="password" placeholder="Ex: Password">
+          </div>
+
+          <div class="submit-btn">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+
+        </form>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</div>
+
+<br>
+<app-footer></app-footer>
+
+

@@ -1,0 +1,17 @@
+.navbar{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.item{
+    text-decoration: none;
+}
+#navItem{
+    color: #ffffff; font-weight: 700; font-size: large;
+}
+#navItem:hover{
+    color: black;
+}
+.active{
+    color: black;
+}

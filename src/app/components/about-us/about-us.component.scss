@@ -1,0 +1,92 @@
+.about-us-page {
+    width: 100%;
+}
+
+.page-header {
+    background-color: #a5c0b4;
+    color: #007042;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out; /* Optional: for smoother transitions */
+}
+
+.page-header.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 10; /* Ensures it stays above other elements */
+    background-color: #007042; /* Darker to show it's fixed */
+    color: white; /* Adjusted for visibility against darker background */
+    width: 100%;
+    height: 12vh;
+}
+.page-contents{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+//================
+
+.content-1{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.content-1-header{
+    width: 60%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-1-body{
+    margin-top: 30px;
+    width: 60%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.paragraphs{
+    width: 85%;
+}
+
+//=================
+
+.content-2{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.content-2-header{
+    width: 60%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-2-body{
+    margin-top: 30px;
+    width: 60%;
+    height:auto;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
